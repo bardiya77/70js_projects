@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("font/Estedad[wght\,kshd].ttf") format("woff"),
+    url("font/Estedad[wght\,kshd].woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Estedad;
+  direction: rtl;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content:center ;
+  font-size: 40px;
+  height: 100vh;
+}
+
+.sectionOne{
+  background: #9800fd;
+}
+
+.sectionTwo{
+  background: #58deff;
+}
+
+.sectionThree{
+  background: #ff2af4;
+}
+
+.sectionFour{
+  background: #80ff19;
+}
+
+.to-top{
+  position: fixed;
+  right: 25px;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  opacity: 0;
+  border-radius:50% ;
+  -webkit-border-radius:50% ;
+  -moz-border-radius:50% ;
+  -ms-border-radius:50% ;
+  -o-border-radius:50% ;
+  transition:all .5s ease-in-out ;
+  -webkit-transition:all .5s ease-in-out ;
+  -moz-transition:all .5s ease-in-out ;
+  -ms-transition:all .5s ease-in-out ;
+  -o-transition:all .5s ease-in-out ;
+}
+
+.to-top.active{
+opacity: 1;
+bottom: 40px;
+}
