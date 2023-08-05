@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("font/Estedad[wght\,kshd].ttf") format("woff"),
+    url("font/Estedad[wght\,kshd].woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Estedad;
+  direction: rtl;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #000;
+  color:#fff;
+  text-align: center;
+}
+
+header h2{
+  padding: 20px 0;
+  font-size: 2rem;
+}
+
+header .progress{
+  background: #aaa;
+  width: 100%;
+  height: 10px;
+  
+}
+
+
+header .progress .progress-bar{
+  background:linear-gradient(to right,rgb(255, 57, 245) 40%, rgb(39, 241, 248));
+  width: 0%;
+  height: 10px;
+}
+
+section{
+  margin-top: 130px;
+}
+
+section p{
+  padding: 20px 100px;
+  margin-bottom: 30px ;
+  font-size: 1.5rem;
+}
+section h2{
+  padding: 20px 100px;
+  line-height: 30px;
+  margin-bottom: 30px ;
+}
