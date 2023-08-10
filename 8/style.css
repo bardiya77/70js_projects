@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("font/Estedad[wght\,kshd].ttf") format("woff"),
+    url("font/Estedad[wght\,kshd].woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Estedad;
+  direction: rtl;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background: purple;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+header h1 {
+  color: white;
+  font-size: 35px;
+}
+header p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+  width: 900px;
+}
+
+.content {
+  width: 900px;
+  margin: 50px auto;
+}
+
+.side-bar {
+  height: 100vh;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.side-bar.active {
+  left: 0px;
+}
+
+.side-bar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.side-bar ul {
+  list-style: none;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.side-bar ul li {
+  transition: background 0.5s ease-in-out;
+  text-align: center;
+  /*border-top:1px solid purple ;*/
+  border-bottom: 1px solid purple;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -ms-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+}
+.side-bar ul li:hover {
+  background-color: purple;
+}
+.side-bar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.side-bar .btn {
+  position: absolute;
+  right: -40px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: plum;
+  cursor: pointer;
+  
+}
+
+.side-bar .btn svg {
+  color: #fff;
+  font-size: 20px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.btn.active svg{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
