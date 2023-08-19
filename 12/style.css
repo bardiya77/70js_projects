@@ -12,9 +12,59 @@
 body {
   font-family: Estedad;
   direction: rtl;
-  display: flex;
+   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;  */
+}
+
+section{
+  width: 100%;
   height: 100vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .box{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+section .box .img-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section .box .img-box img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+section .box .img-box.active{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+section .box .img-box.active img{
+  top: 50px;
+  right: 50px;
+  left: 50px;
+  bottom: 50px;
+  width:calc(100% - 100px);
+  height: calc(100% - 100px);
 }
