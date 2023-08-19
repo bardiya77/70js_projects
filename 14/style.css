@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("font/Estedad[wght\,kshd].ttf") format("woff"),
+    url("font/Estedad[wght\,kshd].woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Estedad;
+  direction: rtl;
+  display: flex;
+  height: 2000px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+header.sticky{
+  background-color: rgb(97, 55, 97);
+  color: #fff;
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+  padding: 5px 20px;
+  list-style: none;
+}
+
+.banner{
+  width: 100%;
+  height: 600px;
+}
+
+.banner img{
+  width: 100%;
+}
