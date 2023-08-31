@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("font/Estedad[wght\,kshd].ttf") format("woff"),
+    url("font/Estedad[wght\,kshd].woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Estedad;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.banner .imgbox {
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.banner .imgbox img {
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-position: center;
+  opacity:0 ;
+}
+.banner .imgbox img.active {
+  opacity: 1;
+}
+
+.controls{
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  /* transform: translateX(-50%); */
+  display: flex;
+}
+
+.controls li{
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.controls li:hover{
+  background: #8a00da;
+}
+.controls li:hover::before {
+  transition: all .5s ease-in-out;
+  border-left: 3px solid #fff;
+  border-bottom:3px solid #fff;
+}
+.controls li::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #000;
+  border-bottom:3px solid #000;
+  transform: rotate(45deg);
+}
+
+.controls li:nth-child(1)::before{
+transform: rotate(-135deg);
+}
