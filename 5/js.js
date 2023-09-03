@@ -15,21 +15,21 @@ menuIcon.addEventListener('click', active = () => {
 
 // ---------------------------------------------
 li1.addEventListener('mousemove', change = () => {
-    document.querySelector('#img').src="image/1.jpg"
+    document.querySelector('#img').src="../asset/images/1.jpg"
 });
 
 li2.addEventListener('mousemove', change = () => {
-    document.querySelector('#img').src="image/2.jpg"
+    document.querySelector('#img').src="../asset/images/2.jpg"
 });
 
 li3.addEventListener('mousemove', change = () => {
-    document.querySelector('#img').src="image/3.jpg"
+    document.querySelector('#img').src="../asset/images/3.jpg"
 });
 
 li4.addEventListener('mousemove', change = () => {
-    document.querySelector('#img').src="image/4.jpg"
+    document.querySelector('#img').src="../asset/images/4.jpg"
 });
 
 li5.addEventListener('mousemove', change = () => {
-    document.querySelector('#img').src="image/5.jpg"
+    document.querySelector('#img').src="../asset/images/5.jpg"
 });
